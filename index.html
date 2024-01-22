@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Info about one of my favorite games ever, PokeMMO, and what it has to offer.">
     <title>About PokeMMO</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--make styles more visually pleasing later, right now I am mainly demonstrating my understanding of CSS-->
 </head>
 
 <body>
     <header>
-        <h1>About <a href="https://pokemmo.com/">PokeMMO</a></h1>
+        <h1>About <a href="https://pokemmo.com/" class="link">PokeMMO</a></h1>
         <!--later create a seperate section to access the game's website-->
         <h2>One of my favorite games!</h2>
-        <h3>By Jacob Pickard</h3>
+        <h3 class="credit">By Jacob Pickard</h3>
         <img src="images/pokemmo.png" alt="PokeMMO Logo"
             width="150px"><!--Later replace this with a more fitting picture, this one has a background and will look bad when styled-->
     </header>
@@ -23,7 +25,8 @@
             switch between them at will.</p>
         <p></p>
         <section>
-            <h2>Why play PokeMMO?</h2>
+            <h2 id="temp_format">Why play PokeMMO?</h2>
+            <!--again I am just showing understanding of techniques and will probably rework this part later on.-->
             <p>PokeMMO has one of the nicest and most helpful communities out of any game I've ever played. Not to
                 mention
                 the nostalgia from playing all the classic pokemon games! The game also includes a unique global market,
@@ -43,7 +46,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Jacob Pickard 2024</p> <!--Maybe fill this footer with other content later on-->
+        <p class="credit">&copy; Jacob Pickard 2024</p> <!--Maybe fill this footer with other content later on-->
     </footer>
 </body>
 

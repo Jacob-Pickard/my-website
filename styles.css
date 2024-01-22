@@ -1,0 +1,47 @@
+:root {
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    color: var(--white);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    background-color: rgb(80, 80, 80);
+}
+
+.credit {
+    color: rgb(212, 67, 67);
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+ul, ol, li{
+    color: var(--white);
+    line-height: 1.5em;
+}
+
+li em {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#temp_format {
+    clear: left;
+}
+
+a:hover {
+font-size: 200%;
+color: rgb(0, 204, 255);
+}
+
+a:visited {
+    color: var(--white);
+}
