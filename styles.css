@@ -4,8 +4,16 @@
 
 body {
     color: var(--white);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    background-color: rgb(80, 80, 80);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    background-image: linear-gradient(to left, rgb(29, 29, 29), rgb(80, 80, 80));
+    border: thin solid rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 10px 2px var(--white);
+    /* later border something else? */
+    margin: 1em auto;
+    padding: 1em;
+    width: 80%
 }
 
 .credit {
@@ -13,12 +21,51 @@ body {
     font-weight: 600;
 }
 
-h1, h2, h3 {
-    color: rgb(0, 0, 0);
-    font-weight: 900;
+.nav {
+    float: right;
+    font-size: 1em !important; 
 }
 
-ul, ol, li{
+.screenshot {
+    width: 100%;
+    margin-bottom: 0em;
+}
+
+.left {
+    float: left;
+    width: 45%;
+}
+
+.right {
+    float: right;
+    width: 45%;
+}
+
+#intro {
+    font-size: 1.5em !important;
+    width: 70%;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    clear:both
+}
+
+br {
+    clear: left;
+}
+
+ul,
+ol,
+li {
     color: var(--white);
     line-height: 1.5em;
 }
@@ -30,18 +77,18 @@ li em {
 img {
     float: left;
     margin-right: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
 }
 
-#temp_format {
+.temp_format {
     clear: left;
 }
 
 a:hover {
-font-size: 200%;
-color: rgb(0, 204, 255);
+    font-size: 150%;
 }
 
-a:visited {
-    color: var(--white);
+a {
+    color: rgb(212, 67, 67);
 }
