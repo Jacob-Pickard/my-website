@@ -16,6 +16,65 @@ body {
     width: 80%
 }
 
+/* start of grid  */
+
+#grid {
+    height: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 16px;
+    grid-template-areas:
+        "blue blue blue"
+        "bar_left light_blue bar_right"
+        "teal teal teal"
+    ;
+}
+
+#blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+#bar_left {
+    grid-area: bar_left;
+    background-color: greenyellow;
+}
+
+#light_blue {
+    grid-area: light_blue;
+    background-color: lightblue;
+}
+
+#bar_right {
+    grid-area: bar_right;
+    background-color: greenyellow;
+}
+
+#teal {
+    grid-area: teal;
+    background-color: teal;
+}
+
+/* end of grid  */
+
+.sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+    margin-right: 1.5em;
+}
+
+.right {
+    width: 50%;
+    text-align: left;
+}
+
 .credit {
     color: rgb(212, 67, 67);
     font-weight: 600;
@@ -24,18 +83,19 @@ body {
 /* Start of Nav Menu */
 
 #nav_menu {
-    margin:auto;
+    margin: auto;
     width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 #nav_menu ul li {
-    float: right;
-    width: 25%;
+    flex-basis: 25%;
 }
 
 #nav_menu ul li a {
@@ -64,16 +124,6 @@ body {
 .screenshot {
     width: 100%;
     margin-bottom: 0em;
-}
-
-.left {
-    float: left;
-    width: 45%;
-}
-
-.right {
-    float: right;
-    width: 45%;
 }
 
 #intro {
@@ -109,8 +159,11 @@ li em {
     text-decoration: underline;
 }
 
-img {
+#wrap {
     float: left;
+}
+
+img {
     margin-right: 1em;
     margin-bottom: 0em;
     margin-top: 0em;
@@ -128,11 +181,15 @@ a {
     color: rgb(212, 67, 67);
 }
 
-@media only screen and (max-width: 772px) {
+@media only screen and (max-width: 800px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+
     #nav_menu ul li {
-        float: none;
         width: 100%;
     }
+
     #nav_menu ul li a {
         border-right: none;
     }
@@ -141,5 +198,19 @@ a {
 @media only screen and (max-width: 648px) {
     img {
         float: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .sections {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
     }
 }
