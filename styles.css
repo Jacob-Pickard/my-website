@@ -4,7 +4,7 @@
 
 body {
     color: var(--white);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.25em;
     background-image: linear-gradient(to left, rgb(29, 29, 29), rgb(80, 80, 80));
     border: thin solid rgb(0, 0, 0);
@@ -15,49 +15,6 @@ body {
     padding: 1em;
     width: 80%
 }
-
-/* start of grid  */
-
-#grid {
-    height: 200px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 16px;
-    grid-template-areas:
-        "blue blue blue"
-        "bar_left light_blue bar_right"
-        "teal teal teal"
-    ;
-}
-
-#blue {
-    grid-area: blue;
-    background-color: blue;
-}
-
-#bar_left {
-    grid-area: bar_left;
-    background-color: greenyellow;
-}
-
-#light_blue {
-    grid-area: light_blue;
-    background-color: lightblue;
-}
-
-#bar_right {
-    grid-area: bar_right;
-    background-color: greenyellow;
-}
-
-#teal {
-    grid-area: teal;
-    background-color: teal;
-}
-
-/* end of grid  */
 
 .sections {
     display: flex;
@@ -169,6 +126,15 @@ img {
     margin-top: 0em;
 }
 
+i {
+    margin: 0.5em;
+}
+
+.alt_img {
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+}
+
 .temp_format {
     clear: left;
 }
@@ -181,7 +147,7 @@ a {
     color: rgb(212, 67, 67);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 990px) {
     #nav_menu ul {
         flex-direction: column;
     }
