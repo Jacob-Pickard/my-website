@@ -1,3 +1,4 @@
+/*Start of global rules*/
 :root {
     --white: rgb(255, 255, 255);
 }
@@ -6,7 +7,7 @@ body {
     color: var(--white);
     font-family: "Roboto", sans-serif;
     font-size: 1.25em;
-    background-image: linear-gradient(to left, rgb(29, 29, 29), rgb(80, 80, 80));
+    background-image: linear-gradient(to left, rgb(41, 41, 41), rgb(80, 80, 80));
     border: thin solid rgb(0, 0, 0);
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 10px 2px var(--white);
@@ -16,6 +17,69 @@ body {
     width: 80%
 }
 
+/* For images taken from in-game. provides more details */
+.screenshot {
+    width: 100%;
+    margin-bottom: 0em;
+}
+
+h1 {
+    margin-bottom: 0.25em !important;
+}
+
+h1,
+h2,
+h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    clear: both
+}
+
+br {
+    clear: left;
+}
+
+ul,
+ol,
+li {
+    color: var(--white);
+    line-height: 1.5em;
+}
+
+img {
+    margin-right: 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+i {
+    margin-left: 0.5em;
+}
+
+/* A specific Identifier for italic text as my i element has different formatting for the purposes of icons */
+.italics {
+    margin: 0;
+}
+
+a:hover {
+    font-size: 150%;
+}
+
+a {
+    color: rgb(212, 67, 67);
+}
+
+.credit {
+    color: rgb(212, 67, 67);
+    font-weight: 600;
+}
+
+/* Start of flex rules */
 .sections {
     display: flex;
     flex-direction: row;
@@ -31,11 +95,7 @@ body {
     width: 50%;
     text-align: left;
 }
-
-.credit {
-    color: rgb(212, 67, 67);
-    font-weight: 600;
-}
+/* End of flex rules */
 
 /* Start of Nav Menu */
 
@@ -77,76 +137,32 @@ body {
 
 
 /* End of Nav Menu */
+/* End of global rules */
 
-.screenshot {
-    width: 100%;
-    margin-bottom: 0em;
+/* Start of index-specific rules */
+.temp_format {
+    clear: left;
 }
 
+/* Small formatting for the text to the right of the PokeMMO logo  */
 #intro {
     font-size: 1.5em !important;
     width: 70%;
 }
 
-h1,
-h2,
-h3 {
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    margin-top: 0em;
-    margin-bottom: 0.5em;
-}
-
-footer {
-    clear: both
-}
-
-br {
-    clear: left;
-}
-
-ul,
-ol,
-li {
-    color: var(--white);
-    line-height: 1.5em;
-}
-
-li em {
-    text-decoration: underline;
-}
-
+/* More logo formatting */
 #wrap {
     float: left;
 }
 
-img {
-    margin-right: 1em;
-    margin-bottom: 0em;
-    margin-top: 0em;
-}
-
-i {
-    margin: 0.5em !important;
-}
-
+/* More logo formatting */
 .alt_img {
     margin-right: 1em;
     margin-bottom: 0.3em !important;
 }
+/* End of index-specific rules */
 
-.temp_format {
-    clear: left;
-}
-
-a:hover {
-    font-size: 150%;
-}
-
-a {
-    color: rgb(212, 67, 67);
-}
-
+/*Start of Media Queries*/
 @media only screen and (max-width: 990px) {
     #nav_menu ul {
         flex-direction: column;
@@ -167,6 +183,7 @@ a {
     }
 }
 
+/* adjusts font size and nav menu flex-direction*/
 @media only screen and (max-width: 750px) {
     .sections {
         flex-direction: column;
@@ -179,4 +196,9 @@ a {
     .right {
         width: 100%;
     }
+
+    body {
+        font-size: 1em;
+    }
 }
+/*End of Media Queries*/

@@ -1,0 +1,16 @@
+As of 2/26 I do not have any sort of feedback so I'll make a few changes to my website that I realized after the previous unit.
+
+Firstly, there was an annoyingly large margin around the icons so I simply set a left margin to space it slightly away from the text.
+
+Next, I remembered that any underlining on a website usually represents a link so I removed an emphasis tag on my index page and replaced it with an i tag for italics. 
+My previous margin change on the i tag did impact this though so I added a new class for italics specifically so there was not an abnormally large gap in my text.
+In addition, I also added various formatting changes to lay out the text in a more visually pleasing way.
+
+Additionally, I'll go over some of the respones left on my module 7 assignment.
+-Make your text smaller at smaller screen widths
+Added a few media queries for this.
+-I find black on dark gray a little hard to read. Consider a light gray for header text?
+Tried a light gray but it clashes with the gray on the left side of website's gradient and makes it hard to read. Though black is definitely a problem on some pages.
+Adjusted the darkness of the gradient which causes the readability issues with black headers.
+-Include more comments in CSS or seperate it into multiple files.
+Added several comments on the purposes of some style rules, as well as shuffling things to categories where they are used.
