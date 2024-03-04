@@ -9,7 +9,9 @@
     <!--Fill this whole page in with more data later on, this is to demonstrate my knowledge.-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7d27005964.js" crossorigin="anonymous"></script>
 </head>
 
@@ -35,8 +37,11 @@
     </header>
     <main>
         <h2>What is a shiny Pokemon?<i class="fa-solid fa-circle-info"></i></h2>
-        <p>Shiny pokemon are essentially a pallete swapped or recolored version of a regular pokemon.</p>
-        <div class="sections">
+        <p>Shiny pokemon are essentially a pallete swapped or recolored version of a regular pokemon, though they are a
+            significantly more rare (a 1/30,000 chance on every wild pokemon you see). You can tell a pokemon is shiny
+            by checking the
+            top right corner of a pokemon's summary for a star. This is shown below.</p>
+        <div class="sections border">
             <section class="left">
                 <img class="screenshot" src="images/watchog.png" alt="A regularly colored watchog"><br>
                 <p>A Regular Watchog</p>
@@ -45,30 +50,63 @@
                 <img class="screenshot" src="images/s_watchog.png" alt="A shiny watchog"><br>
                 <p>A Shiny Watchog</p>
             </section>
-        </div>
-        <h2>Types of Encounters/Shiny Hunts</h2>
+        </div><br>
+        <h2 class="space_fix">Types of Encounters/Shiny Hunts</h2>
+        <p>Horde hunts are typically the faster shiny hunts, as you can encounter more pokemon at once, and thus, more
+            per hour. To be exact, you can encounter just about 1,000 pokemon an hour doing a 5x horde, and
+            about 600 or so doing a 3x horde. While doing single/double encounters usually maxes out at around 300
+            encounters an hour.</p>
+        <p>What these encounters look like is shown below.</p><br>
         <div class="sections">
-            <section class="left">
+            <section class="left border">
                 <h3>Hordes</h3>
                 <img class="screenshot" src="images/5x_horde.png" alt="A Horde of 5 Pokemon"><br>
                 <p>A Horde of 5 pokemon</p><br>
                 <img class="screenshot" src="images/3x_horde.png" alt="A Horde of 3 Pokemon"><br>
                 <p>A Horde of 3 pokemon</p><br>
             </section>
-            <section class="right">
+            <section class="right border">
                 <h3>Others</h3>
                 <img class="screenshot" src="images/double_enc.png" alt="An encounter with 2 Pokemon"><br>
                 <p>An encounter with 2 Pokemon</p><br>
                 <img class="screenshot" src="images/single_enc.png" alt="An encounter with 1 Pokemon"><br>
                 <p>An encounter with 1 Pokemon</p><br>
-                <img class="screenshot" src="images/safari_enc.png" alt="A safari encounter"><br>
-                <p>A safari encounter</p><br>
             </section>
+        </div><br>
+        <div>
+            <h1>Notes:</h1>
+            <p>While shinies are a 1/30,000 chance to encounter one, there is no threshold that will give you a
+                shiny.
+                The game rolls what is essentially a 30,000 sided dice every time you encounter a wild pokemon.
+                The image below demonstrates this idea, as it shows the confidence rating of different numbers
+                of encounters. For example, if you do 30,000 encounters without donator status, 63% of players would
+                have the shiny by then.</p>
+            <p>It
+                is also worth noting that donator status can be purchase from the in-game shop using RP, or reward
+                points (essentially this games form of paid currency, though it can be bought with in-game money as
+                well). Donator status has several benefits, but most notably, it increases your shiny rate by 10%,
+                effectively making it a 1/27,000 chance instead of a 1/30,000 chance.</p>
+        </div>
+        <div>
+            <img class="screenshot" src="images/binomial_distribution.png" alt="Binomial Distribution of shiny hunting">
+        </div><br>
+        <div>
+            <h1>Extra Resources:</h1>
+            <ul>
+                <li><a
+                        href="https://forums.pokemmo.com/index.php?/topic/120706-pokemmo-shiny-hunting-guide-2024-encnespt-released-in-2020/">A
+                        more detailed guide on shiny hunting</a></li>
+                <li><a
+                        href="https://forums.pokemmo.com/index.php?/topic/108705-2024-all-horde-locations-ev-and-shiny-johto-updated/">A
+                        guide to every horde of pokemon in every region</a></li>
+                <li><a href="https://forums.pokemmo.com/index.php?/topic/173891-every-shiny-difficulty-list/">A rarity
+                        guide for every shiny pokemon</a></li>
+            </ul>
         </div>
     </main>
     <footer>
         <p><a href="#top">Return to top</a></p>
-        <p class="credit">&copy; Jacob Pickard 2024</p> <!--Maybe fill this footer with other content later on-->
+        <p>&copy; Jacob Pickard 2024</p> <!--Maybe fill this footer with other content later on-->
     </footer>
 </body>
 

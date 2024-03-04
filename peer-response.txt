@@ -14,3 +14,13 @@ Tried a light gray but it clashes with the gray on the left side of website's gr
 Adjusted the darkness of the gradient which causes the readability issues with black headers.
 -Include more comments in CSS or seperate it into multiple files.
 Added several comments on the purposes of some style rules, as well as shuffling things to categories where they are used.
+
+
+3/4:
+Some of the critques of my website that I've received now are as follows:
+- In the “What is there to do?” section of the main page, I like that there is a link for Shiny Hunting to ease navigation, but I think there could also be one for the Global Trade Link page.
+Added links to each page from the home page, outside of the nav bar.
+- The Teams page has no visual elements
+Working on getting an image of the team hanging out together. Team is relatively new so we haven't actually taken a picture yet. This will be added soon. For now I have added a temporary image of my old team.
+- I realize that the descriptions were tied to the images above it instead, suggestion: adjust the proximity or find a way to visually tie the text to the image (like a border around the image and accompanying text)
+Adjusted the shinies page by adding more information as well as implementing the requested border around related information.
