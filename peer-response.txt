@@ -24,3 +24,12 @@ Added links to each page from the home page, outside of the nav bar.
 Working on getting an image of the team hanging out together. Team is relatively new so we haven't actually taken a picture yet. This will be added soon. For now I have added a temporary image of my old team.
 - I realize that the descriptions were tied to the images above it instead, suggestion: adjust the proximity or find a way to visually tie the text to the image (like a border around the image and accompanying text)
 Adjusted the shinies page by adding more information as well as implementing the requested border around related information.
+
+3/11:
+Some more peer reviews of my website:
+- the contrast between the text and the background could be improved to make the text pop more.
+Not sure exactly how I could address this, ive explored making the the fonts different colors, changing the background gradient, just could never find something that I liked that fit.
+- visibility of the icons next to the navigation options could be enhanced
+I believe that these icons are already perfectly sized, any larger and it creates issues with the nav bar
+- the only thing i would say to add on is the reason why people should play (hint AI is good at that).
+A very great suggestion, but it is already a feature of the website.
